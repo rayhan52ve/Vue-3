@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computed</title>
+    <title>Watch Property</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -20,37 +20,19 @@
                         <div class="card-body">
 
                             <div class="text-start">
-                                <h2 class="card-title">Computed</h2>
-                                <small>Computed property in vue.js</small>
+                                <h2 class="card-title">Watch Property</h2>
+                                <small>Watch property in vue.js</small>
                             </div>
                             <hr class="shadow p-1 my-3 mb-5 bg-success rounded">
 
                             <div class="card shadow p-3 mb-5 bg-light rounded">
-                                <form class="input-group d-flex">
-                                    <input v-model="fname" type="text" class="form-control mx-2"
-                                        placeholder="First Name">
+                                <form>
+                                    <input v-model="email" type="text" class="form-control mx-2"
+                                        placeholder="Enter Email Address">
+                                    <small v-if="email && isEmail" class="text-success mx-2">Email is Valid.</small>
+                                    <small v-if="email && !isEmail" class="text-danger mx-2">Email must be Valid.</small>
 
-                                    <input v-model="lname" type="text" class="form-control mx-2"
-                                        placeholder="Last Name">
                                 </form>
-                            </div>
-
-                            <div class="card shadow p-3 mb-5 bg-light rounded">
-                                <div class="d-flex justify-content-between">
-                                    <p>First Name: {{fname}}</p>
-                                    <p>Char: {{fnameLength}}</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p> Last Name: {{lname}}</p>
-                                    <p>Char: {{lnameLength}}</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p>Full Name: {{fullname}}</p>
-                                    <p>Char: {{fullnameLength}}</p>
-                                </div>
-
                             </div>
                         </div>
                     </div>
