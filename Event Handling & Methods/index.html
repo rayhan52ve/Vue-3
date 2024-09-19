@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling & Methods</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2>{{name}}</h2>
+        <h4>{{counter}}</h4>
+        <!-- <button v-on:click="increaseCounter">Increase</button>
+        <button v-on:click="decreaseCounter">Decrease</button> -->
+        <button @click="increaseCounter">Increase</button>
+        <button @click="decreaseCounter">Decrease</button>
+
+        <button @click="counter++">Increase Without Function</button>
+        <button @click="counter">Decrease Without Function</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
