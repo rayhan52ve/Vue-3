@@ -11,15 +11,8 @@ const app = Vue.createApp({
             ],
         }
     },
-    methods: {
-        completeTodo(todo) {
-            todo.done = true;
-        },
-        undoTodo(todo) {
-            todo.done = false;
-        },
-    },
 });
+
 
 app.component('todo-component', {
     props: ['message', 'todo'],

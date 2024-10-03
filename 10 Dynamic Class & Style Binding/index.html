@@ -29,7 +29,7 @@
                                 <h6 class="mx-3">Select your Hobbies:-</h6>
                                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
                                     <div class="col text-center" v-for="hobby in hobbies">
-                                        <span class="d-block p-2 m-2 rounded" style="cursor: pointer;"
+                                        <span class="d-block p-2 m-2 rounded border border-2" style="cursor: pointer;"
                                             :class="selectedHobbies.includes(hobby) ? 'bg-success text-white':'bg-light'"
                                             v-on:click="addHobby(hobby)">{{ hobby }}</span>
                                     </div>
