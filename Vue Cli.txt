@@ -12,4 +12,6 @@ npm run serve
 //Create with vite + vue 
 npm init vue@latest
 
+npm i vue-router@4
+
  npm i axios
